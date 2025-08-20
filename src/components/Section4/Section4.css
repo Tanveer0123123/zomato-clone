@@ -1,0 +1,81 @@
+/* Container */
+.section4-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: linear-gradient(to right, #fff, #fff4f6); */
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFEDEF 100%);
+  border-radius: 40px;
+  border-style: solid;
+  border: 5px solid #f9dfe3;
+  border-radius: 30px;
+  padding: 60px 100px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  max-width: 1300px;
+}
+
+/* Left Side */
+.left-text {
+  flex: 1;
+}
+
+.left-text h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #1c1c1c;
+}
+
+.left-text p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 35px;
+  line-height: 1.5;
+}
+
+.left-text img {
+  width: 180px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.left-text img:hover {
+  transform: scale(1.05);
+}
+
+/* Right Side */
+.right-text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.right-text img:first-child {
+  width: 440px;  /* Mobile image bigger */
+  z-index: 1;
+}
+
+.right-text p {
+  position: absolute;
+  top: 25%;         
+  left: 50%; 
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #4a4a4a;
+  font-weight: 500;
+  text-align: center;
+  z-index: 2;
+}
+
+.right-text img:last-child {
+  position: absolute;
+  width: 230px;    /* QR Code bigger */
+  top: 60%;        /* adjust vertical */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin-top: 20px;
+}

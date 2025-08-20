@@ -1,0 +1,115 @@
+ .container-sec4{
+    width: 100%;
+    min-height: 100%;
+}
+
+.text-sec-4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.text-sec-4 img{
+    height: 200px;
+}
+.text-sec-4 h2{
+    color: rgb(117, 117, 146);
+    margin: 50px;
+    font-size: 30px;
+}
+.line-text{
+    display: flex;
+    align-items: center;
+}
+.line{
+    width: 90px;
+    height: 2px;
+    background: linear-gradient(to right, white,rgb(117, 117, 146));
+
+}
+.line2{
+    background: linear-gradient(to left, white,rgb(117, 117, 146));
+}
+ .box-sec3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+  background: linear-gradient(to bottom right, #fff, #ffeaea);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border-radius: 16px;
+  padding: 25px;
+  width: 250px;
+  height: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid pink;
+  margin-bottom: 150px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 23px;
+  margin-top: 10px;
+}
+
+.card h1 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.card span {
+  font-size: 14px;
+  font-weight: 600;
+  /* color: #d32f2f; */
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.card span i{
+   font-size: 30px;
+    color: #d32f2f; 
+} 
+   
+.card.zomato {
+  background: linear-gradient(to bottom right, #fff, #ffeaea);
+}
+
+.card.blinkit {
+  background: linear-gradient(to bottom right, #fff, #fff3d6);
+}
+
+.card.district {
+  background: linear-gradient(to bottom right, #fff, #efeaff);
+}
+
+.card.hyperpure {
+  background: linear-gradient(to bottom right, #fff, #ffeaea);
+}
+
+

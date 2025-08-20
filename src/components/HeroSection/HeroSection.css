@@ -1,0 +1,140 @@
+.hero-container{
+  width: 100%;
+  height: 100vh;
+  background: #fff;  
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #fff;              
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  pointer-events: none;        
+  z-index: 0;
+  background-image: url("line.png");
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  filter: contrast(1.6) brightness(0.6) drop-shadow(0 0 0.5px #ff4f8a);
+}
+
+.hero::before {
+  left: 0;
+  background-position: center right; 
+  margin-top: 30px;
+  margin-right: 100px;  
+}
+
+.hero::after {
+  right: 0;
+  background-position: center left; 
+
+}
+
+.hero__text {
+  position: relative;
+  z-index: 2;                   
+  max-width: 650px;
+}
+
+.hero__text h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #ff4f5a;
+  margin-bottom: 20px;
+}
+
+.hero__text p {
+  font-size: 20px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+
+.burger,
+.momos,
+.pizza,
+.leaf,
+.tomato-right,
+.tomato-left {
+  position: absolute;
+  z-index: 1;                   
+  user-select: none;
+}
+
+.burger {
+  left: 13%;
+  bottom: 20%;
+  width: 260px;
+}
+
+.momos {
+  right: 15%;
+  top: 5%;
+  width: 230px;
+}
+
+.pizza {
+  right: 8%;
+  bottom: 0%;
+  width: 250px;
+}
+
+.leaf {
+  top: 8%;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 55px;
+}
+
+.tomato-right {
+  top: 35%;
+  right: 5%;
+  width: 55px;
+   transform: rotate(40deg);
+}
+
+.tomato-left {
+  bottom: 0%;
+  left: 7%;
+  width: 55px;
+  transform: rotate(10deg);
+}
+
+
+@media (max-width: 1200px) {
+  .hero__text h1 { font-size: 44px; }
+  .hero__text p { font-size: 18px; }
+
+  .burger { left: 4%; bottom: 12%; width: 220px; }
+  .momos { right: 8%; top: 10%; width: 200px; }
+  .pizza { right: 7%; bottom: 8%; width: 220px; }
+
+  .hero::before, .hero::after { background-size: 200% 100%; }
+}
+
+@media (max-width: 768px) {
+  .hero { height: 90vh; }
+  .hero__text h1 { font-size: 36px; }
+  .hero__text p { font-size: 16px; }
+
+  .burger { left: 3%; bottom: 10%; width: 180px; }
+  .momos { right: 4%; top: 8%; width: 170px; }
+  .pizza { right: 4%; bottom: 6%; width: 190px; }
+  .leaf { top: 6%; width: 44px; }
+  .tomato-right, .tomato-left { width: 44px; }
+} 
+
