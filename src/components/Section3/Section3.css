@@ -1,40 +1,52 @@
- .container-sec4{
-    width: 100%;
-    min-height: 100%;
+
+.container-sec4 {
+  width: 100%;
+  min-height: 100%;
 }
 
-.text-sec-4{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+.text-sec-4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
 }
-.text-sec-4 img{
-    height: 200px;
-}
-.text-sec-4 h2{
-    color: rgb(117, 117, 146);
-    margin: 50px;
-    font-size: 30px;
-}
-.line-text{
-    display: flex;
-    align-items: center;
-}
-.line{
-    width: 90px;
-    height: 2px;
-    background: linear-gradient(to right, white,rgb(117, 117, 146));
 
+.text-sec-4 img {
+  height: 200px;
+  max-width: 100%;
 }
-.line2{
-    background: linear-gradient(to left, white,rgb(117, 117, 146));
+
+.text-sec-4 h2 {
+  color: rgb(117, 117, 146);
+  margin: 50px 20px;
+  font-size: 30px;
 }
- .box-sec3{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
+
+.line-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.line {
+  width: 90px;
+  height: 2px;
+  background: linear-gradient(to right, white, rgb(117, 117, 146));
+}
+
+.line2 {
+  background: linear-gradient(to left, white, rgb(117, 117, 146));
+}
+
+.box-sec3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 30px;
+  padding: 20px;
 }
 
 .card {
@@ -52,7 +64,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 2px solid pink;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .card:hover {
@@ -85,17 +97,16 @@
 .card span {
   font-size: 14px;
   font-weight: 600;
-  /* color: #d32f2f; */
-  align-items: center;
-  text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.card span i{
-   font-size: 30px;
-    color: #d32f2f; 
-} 
-   
+
+.card span i {
+  font-size: 30px;
+  color: #d32f2f;
+}
+
 .card.zomato {
   background: linear-gradient(to bottom right, #fff, #ffeaea);
 }
@@ -112,4 +123,69 @@
   background: linear-gradient(to bottom right, #fff, #ffeaea);
 }
 
+@media (max-width: 1024px) {
+  .text-sec-4 h2 {
+    font-size: 26px;
+    margin: 30px 10px;
+  }
+  .card {
+    width: 220px;
+    height: 320px;
+    padding: 20px;
+  }
+  .card img {
+    width: 120px;
+  }
+}
 
+@media (max-width: 768px) {
+  .box-sec3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+    padding: 20px;
+  }
+  .card img {
+    width: 100px;
+  }
+  .card h1 {
+    font-size: 18px;
+  }
+  .card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-sec-4 img {
+    height: 150px;
+  }
+  .text-sec-4 h2 {
+    font-size: 20px;
+    margin: 20px 5px;
+  }
+  .line {
+    width: 60px;
+  }
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+  .card img {
+    width: 80px;
+  }
+  .card h1 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 12px;
+  }
+  .card span i {
+    font-size: 24px;
+  }
+}
