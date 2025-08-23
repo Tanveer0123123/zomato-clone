@@ -2,6 +2,7 @@
 .container-sec4 {
   width: 100%;
   min-height: 100%;
+  background-color: white;
 }
 
 .text-sec-4 {
@@ -122,7 +123,7 @@
 .card.hyperpure {
   background: linear-gradient(to bottom right, #fff, #ffeaea);
 }
-
+/* 
 @media (max-width: 1024px) {
   .text-sec-4 h2 {
     font-size: 26px;
@@ -188,4 +189,128 @@
   .card span i {
     font-size: 24px;
   }
+} */
+
+
+@media (max-width: 768px) {
+  .text-sec-4 img {
+    background-color: white;
+    height: 80px; 
+    width: 100px;  
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .text-sec-4 h2 {
+    --tw-text-opacity: 1;
+    color: rgb(118 124 143 / var(--tw-text-opacity, 1));
+    font-size: 13px;  
+    letter-spacing: 2.6px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+     width: 250px;
+  }
+
+@media (max-width: 768px) {
+  .text-sec-4 img {
+    height: 70px; 
+    width: 90px;  
+    margin-top: 40px;
+    margin-bottom: 15px;
+    background-color: white;
+  }
+
+  .container-sec4{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+
+  .text-sec-4 h2 {
+    --tw-text-opacity: 1;
+    color: rgb(118 124 143 / var(--tw-text-opacity, 1));
+    font-size: 12px;  
+    letter-spacing: 2px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    width: 220px;
+  }
+
+  .box-sec3 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+    padding: 10px;
+
+    /* 👉 allow scroll both LTR and RTL */
+    direction: rtl;  
+  }
+
+  .card {
+    flex: 0 0 70%;       /* smaller cards */
+    max-width: 220px;
+    height: auto;
+    padding: 15px;
+    border-radius: 14px;
+    scroll-snap-align: start;
+  }
+
+  .card img {
+    width: 70px;
+  }
+
+  .card h1 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 11px;
+  }
+
+  .card span {
+    font-size: 12px;
+  }
+
+  .card span i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-sec-4 img {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+  }
+
+  .text-sec-4 h2 {
+    font-size: 13px;
+    width: 200px;
+    margin: 8px auto;
+  }
+
+  .card {
+    flex: 0 0 75%;   
+    max-width: 200px;
+    padding: 12px;
+  }
+
+  .card img {
+    width: 60px;
+  }
+
+  .card h1 {
+    font-size: 13px;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+}
 }

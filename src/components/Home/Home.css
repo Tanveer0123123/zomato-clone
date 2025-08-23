@@ -107,33 +107,14 @@ html, body {
 }
 
 
-
-/* Tablets */
-@media (max-width: 1024px) {
-  .text {
-    padding-top: 140px;
-  }
-
-  .text h1 {
-    font-size: 38px;
-  }
-
-  .text p {
-    font-size: 16px;
-  }
-
-  .image img {
-    width: 130px;
-    height: 45px;
-  }
-}
-
-/* Mobile */
+/* 
 @media (max-width: 768px) {
   .text {
-    padding-top: 120px;
+    padding-top: 0;   
     padding-left: 15px;
     padding-right: 15px;
+    justify-content: flex-end; 
+    padding-bottom: 0px; 
   }
 
   .text h1 {
@@ -145,24 +126,19 @@ html, body {
   }
 
   .image {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .image img {
-    width: 40%;
-    height: auto;
+    display: none; 
   }
 
   .text h4 {
-    font-size: 14px;
+    display: none; 
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .text {
-    padding-top: 100px;
+    padding-top: 0;
+    justify-content: flex-end;
+    padding-bottom: 30px;
   }
 
   .text h1 {
@@ -174,12 +150,78 @@ html, body {
     line-height: 1.4;
   }
 
-  .image img {
-    width: 40%;
-    height: auto;
+  .image {
+    display: none; 
   }
 
   .text h4 {
-    font-size: 13px;
+    display: none;
+  }
+} 
+
+
+
+
+
+ */
+/* ------- MOBILE / TABLET VIEW ------- */
+@media (max-width: 768px) {
+  .text {
+    padding: 0 15px;
+    justify-content: flex-end;   /* text neeche ki taraf */
+    padding-bottom: 60px;        /* neeche se thoda gap */
+    text-align: center;
+  }
+
+  .text h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .text p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-top: 12px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .image img {
+    width: 120px;
+    height: 40px;
+  }
+
+  .text h4 {
+    display: none;   /* scroll button mobile pe hide */
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    padding-bottom: 40px;
+  }
+
+  .text h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .image {
+    gap: 8px;
+  }
+
+  .image img {
+    width: 110px;
+    height: 38px;
   }
 }

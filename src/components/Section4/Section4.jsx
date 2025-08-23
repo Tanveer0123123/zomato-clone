@@ -4,6 +4,9 @@ import './Section4.css'
 const Section4 = () => {
     return (
         <div className='section4-container'>
+            <div className="doublephone">
+                <img src="doublephoneimage.png" alt="doublepgoneimage" />
+            </div>
             <div className="left-text">
                 <h1>Download the app now!</h1>
                 <p>Experience seamless online ordering <br />

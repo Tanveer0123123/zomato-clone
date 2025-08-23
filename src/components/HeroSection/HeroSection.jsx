@@ -4,8 +4,8 @@ import "./HeroSection.css";
 
 const HeroSection = () => {
   return (
+    <div className="conatiner-hero">
     <section className="hero">
-
       <div className="hero__text">
         <h1>
           Better food for <br /> more people
@@ -24,6 +24,26 @@ const HeroSection = () => {
       <img src="tomato.png" alt="tomato" className="tomato-left" />
     </section>
 
+    <div className="boxes-container">
+            <div className="boxes">
+                <div className=" box">
+                    <h3>3,00,000+</h3>
+                    <p>restaurants</p>
+                    <img src="home2.png" alt="" />
+                </div>
+                <div className=" box ">
+                    <h3>800+</h3>
+                    <p>cities</p>
+                    <img src="location2.png" alt="" />
+                </div>
+                <div className=" box">
+                    <h3>3 billion+</h3>
+                    <p>orders delivered</p>
+                    <img className="notes" src="notes2.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
   );
 };
 

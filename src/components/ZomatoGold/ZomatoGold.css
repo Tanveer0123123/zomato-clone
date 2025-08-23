@@ -295,29 +295,49 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
+
+   .gold-container::before,
+  .gold-container::after {
+    display: none; 
+  }
+
   .gold-container {
     padding: 60px 15px;
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+  }
+
+  .gold-container {
+    padding: 60px 15px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
   .gold-header img {
     width: 200px;
     margin-top: 80px;
   }
   .left-gold {
-    width: 100px;
-    top: 20px;
+    width: 90px;
+    top: 65px;
   }
   .right-gold {
-    width: 140px;
-    top: 10px;
+    width: 90px;
+    top: 40px;
     right: 20px;
   }
+  .gold-benefits h3{
+      font-size: 10px;
+      letter-spacing: 3px;
+  }
+
+/*   
   .benefits-list {
     gap: 30px;
     flex-direction: column;
     align-items: center;
   }
+  
   .benefit {
     max-width: 90%;
     justify-content: flex-start;
@@ -330,14 +350,72 @@
   }
   .benefit span {
     font-size: 16px;
-  }
-  .gold-down img {
-    width: 100px;
-    height: 120px;
-  }
+  } */
+
+
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-/* Small Mobile */
+.benefit {
+  border-radius: 16px;
+  padding: 25px 15px;
+  width: 130px;           
+  height: 200px;           
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #c4ae8952;
+}
+
+.benefit img {
+  width: 100%px;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.benefit p {
+  margin: 0;
+}
+.benefit strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: -3px;
+  text-align: center;   
+}
+
+.benefit span {
+  font-size: 10px;
+  font-weight: 400;
+  color: #d1c17d;   
+  line-height: 12px;
+}
+
+  .gold-down img {
+        position: absolute;
+        width: 100px;
+        height: 120px;
+        left: 261px;
+        bottom: -24px;
+  } 
+
+  .gold-subtitle {
+  color: #cab46b;
+  font-size: 14px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+} 
+
+/* 
 @media (max-width: 480px) {
   .gold-header img {
     width: 160px;
@@ -347,10 +425,10 @@
     font-size: 14px;
   }
   .left-gold {
-    display: none; /* hide side images */
+    display: none; 
   }
   .right-gold {
-    display: none; /* hide side images */
+    display: none; 
   }
   .benefit {
     flex-direction: column;
@@ -371,4 +449,4 @@
     height: 100px;
   }
 }
-
+ */
